@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEC1C853C0E8A8816E944630 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B72DCA0A2FA2277E5089194 /* libPods.a */; };
+		F92FE3001C02C3D800E813F8 /* GlobalInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F92FE2FD1C02C3D800E813F8 /* GlobalInfo+CoreDataProperties.m */; };
+		F92FE3011C02C3D800E813F8 /* GlobalInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F92FE2FF1C02C3D800E813F8 /* GlobalInfo.m */; };
+		F96122E91BD88CD500D8430D /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F96122E21BD88CD500D8430D /* DateHelper.m */; };
+		F96122EA1BD88CD500D8430D /* KMDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F96122E41BD88CD500D8430D /* KMDatePicker.m */; };
+		F96122EB1BD88CD500D8430D /* KMDatePickerDateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F96122E61BD88CD500D8430D /* KMDatePickerDateModel.m */; };
+		F96122EC1BD88CD500D8430D /* NSDate+CalculateDay.m in Sources */ = {isa = PBXBuildFile; fileRef = F96122E81BD88CD500D8430D /* NSDate+CalculateDay.m */; };
+		F97D4A461BC1883A0003280E /* UIButton+BeautifulButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F97D4A451BC1883A0003280E /* UIButton+BeautifulButton.m */; };
+		F995DD501C00243A00722DA6 /* KMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F995DD4F1C00243A00722DA6 /* KMTableView.m */; };
+		F99D25F61BBD66B300C11F2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F99D25F51BBD66B300C11F2D /* main.m */; };
+		F99D25F91BBD66B300C11F2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F99D25F81BBD66B300C11F2D /* AppDelegate.m */; };
+		F99D25FC1BBD66B300C11F2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99D25FB1BBD66B300C11F2D /* ViewController.m */; };
+		F99D25FF1BBD66B300C11F2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99D25FD1BBD66B300C11F2D /* Main.storyboard */; };
+		F99D26011BBD66B300C11F2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99D26001BBD66B300C11F2D /* Images.xcassets */; };
+		F99D26041BBD66B300C11F2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F99D26021BBD66B300C11F2D /* LaunchScreen.xib */; };
+		F99D26101BBD66B300C11F2D /* KMDataAccessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F99D260F1BBD66B300C11F2D /* KMDataAccessTests.m */; };
+		F9B78D821BFA191C00947392 /* PasswordInputWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B78D811BFA191C00947392 /* PasswordInputWindow.m */; };
+		F9D268041BC0176900D22179 /* SQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D268031BC0176900D22179 /* SQLiteManager.m */; };
+		F9D268071BC0309C00D22179 /* SQLiteDBCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D268061BC0309C00D22179 /* SQLiteDBCreator.m */; };
+		F9D2680A1BC0383100D22179 /* GlobalInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D268091BC0383100D22179 /* GlobalInfoModel.m */; };
+		F9D2680D1BC1223900D22179 /* SQLiteGlobalInfoService.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D2680C1BC1223900D22179 /* SQLiteGlobalInfoService.m */; };
+		F9D268111BC14BB500D22179 /* KMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D2680F1BC14BB500D22179 /* KMTableViewCell.m */; };
+		F9D268121BC14BB500D22179 /* KMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9D268101BC14BB500D22179 /* KMTableViewCell.xib */; };
+		F9EF824B1BE65802004FB0F2 /* RootTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9EF824A1BE65802004FB0F2 /* RootTableView.m */; };
+		F9F255C21BBFA6CE00C49F63 /* SQLiteMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F255C01BBFA6CE00C49F63 /* SQLiteMainViewController.m */; };
+		F9F255C31BBFA6CE00C49F63 /* SQLiteMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9F255C11BBFA6CE00C49F63 /* SQLiteMainViewController.xib */; };
+		F9F255C81BBFAD1700C49F63 /* CoreDataMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F255C61BBFAD1700C49F63 /* CoreDataMainViewController.m */; };
+		F9F255C91BBFAD1700C49F63 /* CoreDataMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9F255C71BBFAD1700C49F63 /* CoreDataMainViewController.xib */; };
+		F9F255D21BBFADC900C49F63 /* FMDBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F255D01BBFADC900C49F63 /* FMDBMainViewController.m */; };
+		F9F255D31BBFADC900C49F63 /* FMDBMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9F255D11BBFADC900C49F63 /* FMDBMainViewController.xib */; };
+		F9F255E61BBFAEF200C49F63 /* KMAddRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F255E41BBFAEF200C49F63 /* KMAddRecordViewController.m */; };
+		F9F255E71BBFAEF200C49F63 /* KMAddRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9F255E51BBFAEF200C49F63 /* KMAddRecordViewController.xib */; };
+		F9F658461C01E7460083CA83 /* GlobalInfoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9F658441C01E7460083CA83 /* GlobalInfoModel.xcdatamodeld */; };
+		F9F6584F1C01EE810083CA83 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F6584E1C01EE810083CA83 /* CoreDataManager.m */; };
+		F9F658521C01EEAA0083CA83 /* CoreDataGlobalInfoService.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F658511C01EEAA0083CA83 /* CoreDataGlobalInfoService.m */; };
+		F9FAB0C41BFC674E00F73C47 /* PListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB0C21BFC674E00F73C47 /* PListViewController.m */; };
+		F9FAB0C51BFC674E00F73C47 /* PListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FAB0C31BFC674E00F73C47 /* PListViewController.xib */; };
+		F9FAB0C91BFC676C00F73C47 /* PreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB0C71BFC676C00F73C47 /* PreferenceViewController.m */; };
+		F9FAB0CA1BFC676C00F73C47 /* PreferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FAB0C81BFC676C00F73C47 /* PreferenceViewController.xib */; };
+		F9FAB0CE1BFC678600F73C47 /* NSKeyedArchiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB0CC1BFC678600F73C47 /* NSKeyedArchiverViewController.m */; };
+		F9FAB0CF1BFC678600F73C47 /* NSKeyedArchiverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FAB0CD1BFC678600F73C47 /* NSKeyedArchiverViewController.xib */; };
+		F9FAB0D31BFC679B00F73C47 /* KeychainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FAB0D11BFC679B00F73C47 /* KeychainViewController.m */; };
+		F9FAB0D41BFC679B00F73C47 /* KeychainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9FAB0D21BFC679B00F73C47 /* KeychainViewController.xib */; };
+		F9FD4D3C1C00B2740009C1FD /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FD4D3B1C00B2740009C1FD /* FMDBManager.m */; };
+		F9FD4D3F1C00B2B40009C1FD /* FMDBDBCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FD4D3E1C00B2B40009C1FD /* FMDBDBCreator.m */; };
+		F9FD4D421C00B2D20009C1FD /* FMDBGlobalInfoService.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FD4D411C00B2D20009C1FD /* FMDBGlobalInfoService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F99D260A1BBD66B300C11F2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F99D25E81BBD66B300C11F2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F99D25EF1BBD66B300C11F2D;
+			remoteInfo = KMDataAccess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B72DCA0A2FA2277E5089194 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		78DCE9F6EE125CF43BB73496 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B2DC976595BF80662534B813 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F92FE2FC1C02C3D800E813F8 /* GlobalInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GlobalInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F92FE2FD1C02C3D800E813F8 /* GlobalInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GlobalInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F92FE2FE1C02C3D800E813F8 /* GlobalInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalInfo.h; sourceTree = "<group>"; };
+		F92FE2FF1C02C3D800E813F8 /* GlobalInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalInfo.m; sourceTree = "<group>"; };
+		F96122E11BD88CD500D8430D /* DateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateHelper.h; sourceTree = "<group>"; };
+		F96122E21BD88CD500D8430D /* DateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateHelper.m; sourceTree = "<group>"; };
+		F96122E31BD88CD500D8430D /* KMDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMDatePicker.h; sourceTree = "<group>"; };
+		F96122E41BD88CD500D8430D /* KMDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMDatePicker.m; sourceTree = "<group>"; };
+		F96122E51BD88CD500D8430D /* KMDatePickerDateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMDatePickerDateModel.h; sourceTree = "<group>"; };
+		F96122E61BD88CD500D8430D /* KMDatePickerDateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMDatePickerDateModel.m; sourceTree = "<group>"; };
+		F96122E71BD88CD500D8430D /* NSDate+CalculateDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CalculateDay.h"; sourceTree = "<group>"; };
+		F96122E81BD88CD500D8430D /* NSDate+CalculateDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CalculateDay.m"; sourceTree = "<group>"; };
+		F97665161BC2BB9D00220AB8 /* EnumKMDataAccessFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumKMDataAccessFunction.h; sourceTree = "<group>"; };
+		F97D4A441BC1883A0003280E /* UIButton+BeautifulButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BeautifulButton.h"; sourceTree = "<group>"; };
+		F97D4A451BC1883A0003280E /* UIButton+BeautifulButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BeautifulButton.m"; sourceTree = "<group>"; };
+		F995DD4E1C00243A00722DA6 /* KMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMTableView.h; sourceTree = "<group>"; };
+		F995DD4F1C00243A00722DA6 /* KMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMTableView.m; sourceTree = "<group>"; };
+		F99D25F01BBD66B300C11F2D /* KMDataAccess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMDataAccess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99D25F41BBD66B300C11F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99D25F51BBD66B300C11F2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F99D25F71BBD66B300C11F2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F99D25F81BBD66B300C11F2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F99D25FA1BBD66B300C11F2D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F99D25FB1BBD66B300C11F2D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F99D25FE1BBD66B300C11F2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F99D26001BBD66B300C11F2D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F99D26031BBD66B300C11F2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F99D26091BBD66B300C11F2D /* KMDataAccessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMDataAccessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99D260E1BBD66B300C11F2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99D260F1BBD66B300C11F2D /* KMDataAccessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KMDataAccessTests.m; sourceTree = "<group>"; };
+		F9B78D801BFA191C00947392 /* PasswordInputWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordInputWindow.h; sourceTree = "<group>"; };
+		F9B78D811BFA191C00947392 /* PasswordInputWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordInputWindow.m; sourceTree = "<group>"; };
+		F9D268021BC0176900D22179 /* SQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteManager.h; sourceTree = "<group>"; };
+		F9D268031BC0176900D22179 /* SQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteManager.m; sourceTree = "<group>"; };
+		F9D268051BC0309C00D22179 /* SQLiteDBCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteDBCreator.h; sourceTree = "<group>"; };
+		F9D268061BC0309C00D22179 /* SQLiteDBCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteDBCreator.m; sourceTree = "<group>"; };
+		F9D268081BC0383100D22179 /* GlobalInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalInfoModel.h; sourceTree = "<group>"; };
+		F9D268091BC0383100D22179 /* GlobalInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalInfoModel.m; sourceTree = "<group>"; };
+		F9D2680B1BC1223900D22179 /* SQLiteGlobalInfoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteGlobalInfoService.h; sourceTree = "<group>"; };
+		F9D2680C1BC1223900D22179 /* SQLiteGlobalInfoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteGlobalInfoService.m; sourceTree = "<group>"; };
+		F9D2680E1BC14BB500D22179 /* KMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMTableViewCell.h; sourceTree = "<group>"; };
+		F9D2680F1BC14BB500D22179 /* KMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMTableViewCell.m; sourceTree = "<group>"; };
+		F9D268101BC14BB500D22179 /* KMTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMTableViewCell.xib; sourceTree = "<group>"; };
+		F9EF82491BE65802004FB0F2 /* RootTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableView.h; sourceTree = "<group>"; };
+		F9EF824A1BE65802004FB0F2 /* RootTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableView.m; sourceTree = "<group>"; };
+		F9F255BC1BBFA42700C49F63 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F9F255BF1BBFA6CE00C49F63 /* SQLiteMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteMainViewController.h; sourceTree = "<group>"; };
+		F9F255C01BBFA6CE00C49F63 /* SQLiteMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteMainViewController.m; sourceTree = "<group>"; };
+		F9F255C11BBFA6CE00C49F63 /* SQLiteMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLiteMainViewController.xib; sourceTree = "<group>"; };
+		F9F255C51BBFAD1700C49F63 /* CoreDataMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataMainViewController.h; sourceTree = "<group>"; };
+		F9F255C61BBFAD1700C49F63 /* CoreDataMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataMainViewController.m; sourceTree = "<group>"; };
+		F9F255C71BBFAD1700C49F63 /* CoreDataMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataMainViewController.xib; sourceTree = "<group>"; };
+		F9F255CF1BBFADC900C49F63 /* FMDBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBMainViewController.h; sourceTree = "<group>"; };
+		F9F255D01BBFADC900C49F63 /* FMDBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBMainViewController.m; sourceTree = "<group>"; };
+		F9F255D11BBFADC900C49F63 /* FMDBMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMDBMainViewController.xib; sourceTree = "<group>"; };
+		F9F255E31BBFAEF200C49F63 /* KMAddRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMAddRecordViewController.h; sourceTree = "<group>"; };
+		F9F255E41BBFAEF200C49F63 /* KMAddRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMAddRecordViewController.m; sourceTree = "<group>"; };
+		F9F255E51BBFAEF200C49F63 /* KMAddRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KMAddRecordViewController.xib; sourceTree = "<group>"; };
+		F9F658451C01E7460083CA83 /* GlobalInfoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GlobalInfoModel.xcdatamodel; sourceTree = "<group>"; };
+		F9F6584D1C01EE810083CA83 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		F9F6584E1C01EE810083CA83 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		F9F658501C01EEAA0083CA83 /* CoreDataGlobalInfoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataGlobalInfoService.h; sourceTree = "<group>"; };
+		F9F658511C01EEAA0083CA83 /* CoreDataGlobalInfoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataGlobalInfoService.m; sourceTree = "<group>"; };
+		F9FAB0C11BFC674E00F73C47 /* PListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PListViewController.h; sourceTree = "<group>"; };
+		F9FAB0C21BFC674E00F73C47 /* PListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PListViewController.m; sourceTree = "<group>"; };
+		F9FAB0C31BFC674E00F73C47 /* PListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PListViewController.xib; sourceTree = "<group>"; };
+		F9FAB0C61BFC676C00F73C47 /* PreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceViewController.h; sourceTree = "<group>"; };
+		F9FAB0C71BFC676C00F73C47 /* PreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceViewController.m; sourceTree = "<group>"; };
+		F9FAB0C81BFC676C00F73C47 /* PreferenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferenceViewController.xib; sourceTree = "<group>"; };
+		F9FAB0CB1BFC678600F73C47 /* NSKeyedArchiverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKeyedArchiverViewController.h; sourceTree = "<group>"; };
+		F9FAB0CC1BFC678600F73C47 /* NSKeyedArchiverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKeyedArchiverViewController.m; sourceTree = "<group>"; };
+		F9FAB0CD1BFC678600F73C47 /* NSKeyedArchiverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSKeyedArchiverViewController.xib; sourceTree = "<group>"; };
+		F9FAB0D01BFC679B00F73C47 /* KeychainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainViewController.h; sourceTree = "<group>"; };
+		F9FAB0D11BFC679B00F73C47 /* KeychainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainViewController.m; sourceTree = "<group>"; };
+		F9FAB0D21BFC679B00F73C47 /* KeychainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeychainViewController.xib; sourceTree = "<group>"; };
+		F9FD4D3A1C00B2740009C1FD /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		F9FD4D3B1C00B2740009C1FD /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
+		F9FD4D3D1C00B2B40009C1FD /* FMDBDBCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBDBCreator.h; sourceTree = "<group>"; };
+		F9FD4D3E1C00B2B40009C1FD /* FMDBDBCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBDBCreator.m; sourceTree = "<group>"; };
+		F9FD4D401C00B2D20009C1FD /* FMDBGlobalInfoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBGlobalInfoService.h; sourceTree = "<group>"; };
+		F9FD4D411C00B2D20009C1FD /* FMDBGlobalInfoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBGlobalInfoService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F99D25ED1BBD66B300C11F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC1C853C0E8A8816E944630 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99D26061BBD66B300C11F2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C84BB4CA64AEC4527F3F80A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B72DCA0A2FA2277E5089194 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E14F241EA25B52D68DAD852F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78DCE9F6EE125CF43BB73496 /* Pods.debug.xcconfig */,
+				B2DC976595BF80662534B813 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F96122E01BD88CD500D8430D /* KMDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F96122E11BD88CD500D8430D /* DateHelper.h */,
+				F96122E21BD88CD500D8430D /* DateHelper.m */,
+				F96122E71BD88CD500D8430D /* NSDate+CalculateDay.h */,
+				F96122E81BD88CD500D8430D /* NSDate+CalculateDay.m */,
+				F96122E51BD88CD500D8430D /* KMDatePickerDateModel.h */,
+				F96122E61BD88CD500D8430D /* KMDatePickerDateModel.m */,
+				F96122E31BD88CD500D8430D /* KMDatePicker.h */,
+				F96122E41BD88CD500D8430D /* KMDatePicker.m */,
+			);
+			path = KMDatePicker;
+			sourceTree = "<group>";
+		};
+		F99D25E71BBD66B300C11F2D = {
+			isa = PBXGroup;
+			children = (
+				F99D25F21BBD66B300C11F2D /* KMDataAccess */,
+				F99D260C1BBD66B300C11F2D /* KMDataAccessTests */,
+				F99D25F11BBD66B300C11F2D /* Products */,
+				E14F241EA25B52D68DAD852F /* Pods */,
+				3C84BB4CA64AEC4527F3F80A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F99D25F11BBD66B300C11F2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F99D25F01BBD66B300C11F2D /* KMDataAccess.app */,
+				F99D26091BBD66B300C11F2D /* KMDataAccessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F99D25F21BBD66B300C11F2D /* KMDataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB0BE1BFC480D00F73C47 /* Tool */,
+				F9FAB0BF1BFC4AB400F73C47 /* Common */,
+				F9FAB0C01BFC63A900F73C47 /* Other */,
+				F9F255BD1BBFA61D00C49F63 /* SQLite */,
+				F99D26191BBD66D400C11F2D /* CoreData */,
+				F99D261B1BBD66F600C11F2D /* FMDB */,
+				F99D25F71BBD66B300C11F2D /* AppDelegate.h */,
+				F99D25F81BBD66B300C11F2D /* AppDelegate.m */,
+				F9EF82491BE65802004FB0F2 /* RootTableView.h */,
+				F9EF824A1BE65802004FB0F2 /* RootTableView.m */,
+				F99D25FA1BBD66B300C11F2D /* ViewController.h */,
+				F99D25FB1BBD66B300C11F2D /* ViewController.m */,
+				F99D25FD1BBD66B300C11F2D /* Main.storyboard */,
+				F99D26001BBD66B300C11F2D /* Images.xcassets */,
+				F99D26021BBD66B300C11F2D /* LaunchScreen.xib */,
+				F99D25F31BBD66B300C11F2D /* Supporting Files */,
+			);
+			path = KMDataAccess;
+			sourceTree = "<group>";
+		};
+		F99D25F31BBD66B300C11F2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9F255BC1BBFA42700C49F63 /* PrefixHeader.pch */,
+				F99D25F41BBD66B300C11F2D /* Info.plist */,
+				F99D25F51BBD66B300C11F2D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F99D260C1BBD66B300C11F2D /* KMDataAccessTests */ = {
+			isa = PBXGroup;
+			children = (
+				F99D260F1BBD66B300C11F2D /* KMDataAccessTests.m */,
+				F99D260D1BBD66B300C11F2D /* Supporting Files */,
+			);
+			path = KMDataAccessTests;
+			sourceTree = "<group>";
+		};
+		F99D260D1BBD66B300C11F2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F99D260E1BBD66B300C11F2D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F99D26191BBD66D400C11F2D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F9F658441C01E7460083CA83 /* GlobalInfoModel.xcdatamodeld */,
+				F92FE2FC1C02C3D800E813F8 /* GlobalInfo+CoreDataProperties.h */,
+				F92FE2FD1C02C3D800E813F8 /* GlobalInfo+CoreDataProperties.m */,
+				F92FE2FE1C02C3D800E813F8 /* GlobalInfo.h */,
+				F92FE2FF1C02C3D800E813F8 /* GlobalInfo.m */,
+				F9F6584D1C01EE810083CA83 /* CoreDataManager.h */,
+				F9F6584E1C01EE810083CA83 /* CoreDataManager.m */,
+				F9F658501C01EEAA0083CA83 /* CoreDataGlobalInfoService.h */,
+				F9F658511C01EEAA0083CA83 /* CoreDataGlobalInfoService.m */,
+				F9F255C51BBFAD1700C49F63 /* CoreDataMainViewController.h */,
+				F9F255C61BBFAD1700C49F63 /* CoreDataMainViewController.m */,
+				F9F255C71BBFAD1700C49F63 /* CoreDataMainViewController.xib */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		F99D261B1BBD66F600C11F2D /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				F9FD4D3A1C00B2740009C1FD /* FMDBManager.h */,
+				F9FD4D3B1C00B2740009C1FD /* FMDBManager.m */,
+				F9FD4D3D1C00B2B40009C1FD /* FMDBDBCreator.h */,
+				F9FD4D3E1C00B2B40009C1FD /* FMDBDBCreator.m */,
+				F9FD4D401C00B2D20009C1FD /* FMDBGlobalInfoService.h */,
+				F9FD4D411C00B2D20009C1FD /* FMDBGlobalInfoService.m */,
+				F9F255CF1BBFADC900C49F63 /* FMDBMainViewController.h */,
+				F9F255D01BBFADC900C49F63 /* FMDBMainViewController.m */,
+				F9F255D11BBFADC900C49F63 /* FMDBMainViewController.xib */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		F9F255BD1BBFA61D00C49F63 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				F9D268021BC0176900D22179 /* SQLiteManager.h */,
+				F9D268031BC0176900D22179 /* SQLiteManager.m */,
+				F9D268051BC0309C00D22179 /* SQLiteDBCreator.h */,
+				F9D268061BC0309C00D22179 /* SQLiteDBCreator.m */,
+				F9D2680B1BC1223900D22179 /* SQLiteGlobalInfoService.h */,
+				F9D2680C1BC1223900D22179 /* SQLiteGlobalInfoService.m */,
+				F9F255BF1BBFA6CE00C49F63 /* SQLiteMainViewController.h */,
+				F9F255C01BBFA6CE00C49F63 /* SQLiteMainViewController.m */,
+				F9F255C11BBFA6CE00C49F63 /* SQLiteMainViewController.xib */,
+			);
+			name = SQLite;
+			sourceTree = "<group>";
+		};
+		F9FAB0BE1BFC480D00F73C47 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				F96122E01BD88CD500D8430D /* KMDatePicker */,
+				F97D4A441BC1883A0003280E /* UIButton+BeautifulButton.h */,
+				F97D4A451BC1883A0003280E /* UIButton+BeautifulButton.m */,
+				F9B78D801BFA191C00947392 /* PasswordInputWindow.h */,
+				F9B78D811BFA191C00947392 /* PasswordInputWindow.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		F9FAB0BF1BFC4AB400F73C47 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F97665161BC2BB9D00220AB8 /* EnumKMDataAccessFunction.h */,
+				F9D268081BC0383100D22179 /* GlobalInfoModel.h */,
+				F9D268091BC0383100D22179 /* GlobalInfoModel.m */,
+				F9D2680E1BC14BB500D22179 /* KMTableViewCell.h */,
+				F9D2680F1BC14BB500D22179 /* KMTableViewCell.m */,
+				F9D268101BC14BB500D22179 /* KMTableViewCell.xib */,
+				F995DD4E1C00243A00722DA6 /* KMTableView.h */,
+				F995DD4F1C00243A00722DA6 /* KMTableView.m */,
+				F9F255E31BBFAEF200C49F63 /* KMAddRecordViewController.h */,
+				F9F255E41BBFAEF200C49F63 /* KMAddRecordViewController.m */,
+				F9F255E51BBFAEF200C49F63 /* KMAddRecordViewController.xib */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		F9FAB0C01BFC63A900F73C47 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F9FAB0C11BFC674E00F73C47 /* PListViewController.h */,
+				F9FAB0C21BFC674E00F73C47 /* PListViewController.m */,
+				F9FAB0C31BFC674E00F73C47 /* PListViewController.xib */,
+				F9FAB0C61BFC676C00F73C47 /* PreferenceViewController.h */,
+				F9FAB0C71BFC676C00F73C47 /* PreferenceViewController.m */,
+				F9FAB0C81BFC676C00F73C47 /* PreferenceViewController.xib */,
+				F9FAB0CB1BFC678600F73C47 /* NSKeyedArchiverViewController.h */,
+				F9FAB0CC1BFC678600F73C47 /* NSKeyedArchiverViewController.m */,
+				F9FAB0CD1BFC678600F73C47 /* NSKeyedArchiverViewController.xib */,
+				F9FAB0D01BFC679B00F73C47 /* KeychainViewController.h */,
+				F9FAB0D11BFC679B00F73C47 /* KeychainViewController.m */,
+				F9FAB0D21BFC679B00F73C47 /* KeychainViewController.xib */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F99D25EF1BBD66B300C11F2D /* KMDataAccess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99D26131BBD66B300C11F2D /* Build configuration list for PBXNativeTarget "KMDataAccess" */;
+			buildPhases = (
+				CF9B6379B270CAB5556817F5 /* Check Pods Manifest.lock */,
+				F99D25EC1BBD66B300C11F2D /* Sources */,
+				F99D25ED1BBD66B300C11F2D /* Frameworks */,
+				F99D25EE1BBD66B300C11F2D /* Resources */,
+				15EA1062352F0F7CC94AFD8A /* Copy Pods Resources */,
+				29E57F835D5D0ADB6C819C4F /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMDataAccess;
+			productName = KMDataAccess;
+			productReference = F99D25F01BBD66B300C11F2D /* KMDataAccess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F99D26081BBD66B300C11F2D /* KMDataAccessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99D26161BBD66B300C11F2D /* Build configuration list for PBXNativeTarget "KMDataAccessTests" */;
+			buildPhases = (
+				F99D26051BBD66B300C11F2D /* Sources */,
+				F99D26061BBD66B300C11F2D /* Frameworks */,
+				F99D26071BBD66B300C11F2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F99D260B1BBD66B300C11F2D /* PBXTargetDependency */,
+			);
+			name = KMDataAccessTests;
+			productName = KMDataAccessTests;
+			productReference = F99D26091BBD66B300C11F2D /* KMDataAccessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F99D25E81BBD66B300C11F2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Kenmu;
+				TargetAttributes = {
+					F99D25EF1BBD66B300C11F2D = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = R7N88J7F7X;
+					};
+					F99D26081BBD66B300C11F2D = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F99D25EF1BBD66B300C11F2D;
+					};
+				};
+			};
+			buildConfigurationList = F99D25EB1BBD66B300C11F2D /* Build configuration list for PBXProject "KMDataAccess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F99D25E71BBD66B300C11F2D;
+			productRefGroup = F99D25F11BBD66B300C11F2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F99D25EF1BBD66B300C11F2D /* KMDataAccess */,
+				F99D26081BBD66B300C11F2D /* KMDataAccessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F99D25EE1BBD66B300C11F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9F255D31BBFADC900C49F63 /* FMDBMainViewController.xib in Resources */,
+				F9D268121BC14BB500D22179 /* KMTableViewCell.xib in Resources */,
+				F99D25FF1BBD66B300C11F2D /* Main.storyboard in Resources */,
+				F9FAB0C51BFC674E00F73C47 /* PListViewController.xib in Resources */,
+				F99D26041BBD66B300C11F2D /* LaunchScreen.xib in Resources */,
+				F9FAB0CA1BFC676C00F73C47 /* PreferenceViewController.xib in Resources */,
+				F9F255C91BBFAD1700C49F63 /* CoreDataMainViewController.xib in Resources */,
+				F9F255E71BBFAEF200C49F63 /* KMAddRecordViewController.xib in Resources */,
+				F99D26011BBD66B300C11F2D /* Images.xcassets in Resources */,
+				F9FAB0CF1BFC678600F73C47 /* NSKeyedArchiverViewController.xib in Resources */,
+				F9FAB0D41BFC679B00F73C47 /* KeychainViewController.xib in Resources */,
+				F9F255C31BBFA6CE00C49F63 /* SQLiteMainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99D26071BBD66B300C11F2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15EA1062352F0F7CC94AFD8A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29E57F835D5D0ADB6C819C4F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF9B6379B270CAB5556817F5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F99D25EC1BBD66B300C11F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FAB0CE1BFC678600F73C47 /* NSKeyedArchiverViewController.m in Sources */,
+				F9FAB0C91BFC676C00F73C47 /* PreferenceViewController.m in Sources */,
+				F9F658461C01E7460083CA83 /* GlobalInfoModel.xcdatamodeld in Sources */,
+				F9FD4D3C1C00B2740009C1FD /* FMDBManager.m in Sources */,
+				F92FE3011C02C3D800E813F8 /* GlobalInfo.m in Sources */,
+				F9FD4D3F1C00B2B40009C1FD /* FMDBDBCreator.m in Sources */,
+				F9FAB0D31BFC679B00F73C47 /* KeychainViewController.m in Sources */,
+				F92FE3001C02C3D800E813F8 /* GlobalInfo+CoreDataProperties.m in Sources */,
+				F9D2680A1BC0383100D22179 /* GlobalInfoModel.m in Sources */,
+				F9F658521C01EEAA0083CA83 /* CoreDataGlobalInfoService.m in Sources */,
+				F9FD4D421C00B2D20009C1FD /* FMDBGlobalInfoService.m in Sources */,
+				F9EF824B1BE65802004FB0F2 /* RootTableView.m in Sources */,
+				F9D268111BC14BB500D22179 /* KMTableViewCell.m in Sources */,
+				F99D25FC1BBD66B300C11F2D /* ViewController.m in Sources */,
+				F96122EC1BD88CD500D8430D /* NSDate+CalculateDay.m in Sources */,
+				F995DD501C00243A00722DA6 /* KMTableView.m in Sources */,
+				F9F255C81BBFAD1700C49F63 /* CoreDataMainViewController.m in Sources */,
+				F9F255D21BBFADC900C49F63 /* FMDBMainViewController.m in Sources */,
+				F9B78D821BFA191C00947392 /* PasswordInputWindow.m in Sources */,
+				F99D25F91BBD66B300C11F2D /* AppDelegate.m in Sources */,
+				F97D4A461BC1883A0003280E /* UIButton+BeautifulButton.m in Sources */,
+				F9F255E61BBFAEF200C49F63 /* KMAddRecordViewController.m in Sources */,
+				F9D268071BC0309C00D22179 /* SQLiteDBCreator.m in Sources */,
+				F99D25F61BBD66B300C11F2D /* main.m in Sources */,
+				F96122EB1BD88CD500D8430D /* KMDatePickerDateModel.m in Sources */,
+				F96122E91BD88CD500D8430D /* DateHelper.m in Sources */,
+				F9FAB0C41BFC674E00F73C47 /* PListViewController.m in Sources */,
+				F9D2680D1BC1223900D22179 /* SQLiteGlobalInfoService.m in Sources */,
+				F96122EA1BD88CD500D8430D /* KMDatePicker.m in Sources */,
+				F9F255C21BBFA6CE00C49F63 /* SQLiteMainViewController.m in Sources */,
+				F9F6584F1C01EE810083CA83 /* CoreDataManager.m in Sources */,
+				F9D268041BC0176900D22179 /* SQLiteManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F99D26051BBD66B300C11F2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F99D26101BBD66B300C11F2D /* KMDataAccessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F99D260B1BBD66B300C11F2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F99D25EF1BBD66B300C11F2D /* KMDataAccess */;
+			targetProxy = F99D260A1BBD66B300C11F2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F99D25FD1BBD66B300C11F2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F99D25FE1BBD66B300C11F2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F99D26021BBD66B300C11F2D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F99D26031BBD66B300C11F2D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F99D26111BBD66B300C11F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F99D26121BBD66B300C11F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F99D26141BBD66B300C11F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78DCE9F6EE125CF43BB73496 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)//PrefixHeader.pch";
+				INFOPLIST_FILE = KMDataAccess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kenmu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		F99D26151BBD66B300C11F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2DC976595BF80662534B813 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)//PrefixHeader.pch";
+				INFOPLIST_FILE = KMDataAccess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kenmu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		F99D26171BBD66B300C11F2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KMDataAccessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kenmu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KMDataAccess.app/KMDataAccess";
+			};
+			name = Debug;
+		};
+		F99D26181BBD66B300C11F2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KMDataAccessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kenmu.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KMDataAccess.app/KMDataAccess";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F99D25EB1BBD66B300C11F2D /* Build configuration list for PBXProject "KMDataAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99D26111BBD66B300C11F2D /* Debug */,
+				F99D26121BBD66B300C11F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99D26131BBD66B300C11F2D /* Build configuration list for PBXNativeTarget "KMDataAccess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99D26141BBD66B300C11F2D /* Debug */,
+				F99D26151BBD66B300C11F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99D26161BBD66B300C11F2D /* Build configuration list for PBXNativeTarget "KMDataAccessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99D26171BBD66B300C11F2D /* Debug */,
+				F99D26181BBD66B300C11F2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9F658441C01E7460083CA83 /* GlobalInfoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9F658451C01E7460083CA83 /* GlobalInfoModel.xcdatamodel */,
+			);
+			currentVersion = F9F658451C01E7460083CA83 /* GlobalInfoModel.xcdatamodel */;
+			path = GlobalInfoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F99D25E81BBD66B300C11F2D /* Project object */;
+}

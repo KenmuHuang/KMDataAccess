@@ -1,0 +1,102 @@
+//
+//  PrefixHeader.pch
+//  KMDataAccess
+//
+//  Created by KenmuHuang on 15/10/1.
+//  Copyright (c) 2015年 Kenmu. All rights reserved.
+//
+
+// ***********************仅仅让支持 Objective-C 语言的文件调用***********************
+#ifdef __OBJC__
+
+#define kTitleOfPList @"plist 文件「属性列表」"
+#define kTitleOfPreference @"preference「偏好设置」"
+#define kTitleOfNSKeyedArchiver @"NSKeyedArchiver「归档」"
+#define kTitleOfKeychain @"Keychain「钥匙串」"
+#define kTitleOfSQLite @"SQLite"
+#define kTitleOfCoreData @"CoreData"
+#define kTitleOfFMDB @"FMDB"
+
+#define kPListName @"GlobalInfo.plist"
+#define kNSKeyedArchiverName @"GlobalInfo.data"
+#define kSQLiteDBName @"SQLiteDB.db"
+#define kCoreDataDBName @"CoreDataDB.db"
+#define kFMDBDBName @"FMDBDB.db"
+
+#define kID @"ID"
+#define kAvatarImageStr @"avatarImageStr"
+#define kName @"name"
+#define kText @"text"
+#define kLink @"link"
+#define kCreatedAt @"createdAt"
+#define kHaveLink @"haveLink"
+
+#define kBlogImageStr @"http://pic.cnblogs.com/avatar/66516/20150521204639.png"
+
+#define kApplication [UIApplication sharedApplication]
+
+// *********************** iOS 通用宏定义内容 begin
+// iOS 版本
+#define kOSVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
+// App 显示名称
+#define kAppDisplayName [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"]
+
+// 当前语言
+#define kLocaleLanguage [[NSLocale preferredLanguages] objectAtIndex:0]
+
+// 是否是 iPhone
+#define kIsPhone UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone
+
+// 是否是 iPad
+#define kIsPad UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad
+
+// 判断机型；根据屏幕分辨率区别「像素」=屏幕大小「点素」*屏幕模式「iPhone 4开始比例就为2x」
+#define funcIsMatchingSize(width,height) [UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(width, height), [[UIScreen mainScreen] currentMode].size) : NO
+#define kIsPhone4 funcIsMatchingSize(640.0,960.0)
+#define kIsPhone5 funcIsMatchingSize(640.0,1136.0)
+#define kIsPhone6 funcIsMatchingSize(750.0,1334.0)
+#define kIsPhone6Plus funcIsMatchingSize(1242.0,2208.0)
+
+// 高度：状态栏、导航栏、状态栏和导航栏、选项卡、表格单元格、英国键盘、中国键盘
+#define kHeightOfStatus 20.0
+#define kHeightOfNavigation 44.0
+#define kHeightOfStatusAndNavigation 64.0
+#define kHeightOfTabBar 49.0
+#define kHeightOfCell 44.0
+#define kHeightOfEnglishKeyboard 216.0
+#define kHeightOfChineseKeyboard 252.0
+
+// 屏幕大小
+#define kFrameOfMainScreen [[UIScreen mainScreen] bounds]
+#define kWidthOfMainScreen kFrameOfMainScreen.size.width
+#define kHeightOfMainScreen kFrameOfMainScreen.size.height
+#define kAbsoluteHeightOfMainScreen kHeightOfMainScreen - kHeightOfStatusAndNavigation
+
+// 去除状态栏后的屏幕大小
+#define kFrameOfApplicationFrame [[UIScreen mainScreen] applicationFrame]
+#define kWidthOfApplicationFrame kFrameOfApplicationFrame.size.width
+#define kHeightOfApplicationFrame kFrameOfApplicationFrame.size.height
+
+// View 的坐标(x, y)和宽高(width, height)
+#define funcX(v) (v).frame.origin.x
+#define funcY(v) (v).frame.origin.y
+#define funcWidth(v) (v).frame.size.width
+#define funcHeight(v) (v).frame.size.height
+
+// View 的坐标(x, y)：视图起始点、视图中间点、视图终止点（视图起始点和视图宽高）
+#define funcMinX(v) CGRectGetMinX((v).frame)
+#define funcMinY(v) CGRectGetMinY((v).frame)
+#define funcMidX(v) CGRectGetMidX((v).frame)
+#define funcMidY(v) CGRectGetMidY((v).frame)
+#define funcMaxX(v) CGRectGetMaxX((v).frame)
+#define funcMaxY(v) CGRectGetMaxY((v).frame)
+
+// 文件路径
+#define funcFilePath(fileName,type) [[NSBundle mainBundle] pathForResource:[NSString stringWithUTF8String:(fileName)] ofType:(type)]
+
+// 读取图片
+#define funcImage(fileName,type) [UIImage imageWithContentsOfFile:funcFilePath(fileName,type)]
+// *********************** iOS 通用宏定义内容 end
+
+#endif

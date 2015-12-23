@@ -1,0 +1,28 @@
+PODS:
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - FXBlurView (1.6.4)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SSKeychain (1.2.3)
+  - SWTableViewCell (0.3.7)
+
+DEPENDENCIES:
+  - FMDB
+  - FXBlurView
+  - SDWebImage
+  - SSKeychain
+  - SWTableViewCell
+
+SPEC CHECKSUMS:
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SSKeychain: 3f42991739c6c60a9cf1bbd4dff6c0d3694bcf3d
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+
+COCOAPODS: 0.39.0

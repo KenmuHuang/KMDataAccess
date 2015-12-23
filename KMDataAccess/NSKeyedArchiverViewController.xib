@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NSKeyedArchiverViewController">
+            <connections>
+                <outlet property="btnReadFrom" destination="Hrl-uk-JSw" id="nV6-OV-Rf3"/>
+                <outlet property="btnWriteTo" destination="cuW-i2-YpE" id="n6l-B7-NeY"/>
+                <outlet property="txtVDetailInfo" destination="rcF-88-xY3" id="xy5-kF-bbP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuW-i2-YpE">
+                    <rect key="frame" x="10" y="89" width="146" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0Vn-sn-yqh"/>
+                        <constraint firstAttribute="width" constant="146" id="tTE-vd-HvS"/>
+                    </constraints>
+                    <state key="normal" title="写入"/>
+                    <connections>
+                        <action selector="btnWriteToPressed:" destination="-1" eventType="touchUpInside" id="lIc-89-X6J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrl-uk-JSw">
+                    <rect key="frame" x="444" y="89" width="146" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="86p-Bb-i9O"/>
+                        <constraint firstAttribute="height" constant="40" id="gUI-wf-O43"/>
+                    </constraints>
+                    <state key="normal" title="读取"/>
+                    <connections>
+                        <action selector="btnReadFromPressed:" destination="-1" eventType="touchUpInside" id="b6Z-5a-wbU"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="先点击「写入」按钮写入数据到文件内，然后点击「读取」按钮读取文件内数据进行展示" translatesAutoresizingMaskIntoConstraints="NO" id="rcF-88-xY3">
+                    <rect key="frame" x="140" y="151" width="320" height="328"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="328" id="dng-jX-jii"/>
+                        <constraint firstAttribute="width" constant="320" id="vUv-SR-O5V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                </textView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Hrl-uk-JSw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="89" id="3cF-XJ-pbe"/>
+                <constraint firstItem="cuW-i2-YpE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="89" id="Uhh-cQ-Vf8"/>
+                <constraint firstAttribute="trailing" secondItem="Hrl-uk-JSw" secondAttribute="trailing" constant="10" id="eVO-n3-Mip"/>
+                <constraint firstItem="rcF-88-xY3" firstAttribute="top" secondItem="cuW-i2-YpE" secondAttribute="bottom" constant="22" id="lwx-xU-Ffj"/>
+                <constraint firstItem="cuW-i2-YpE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="nID-Rx-CzM"/>
+                <constraint firstItem="rcF-88-xY3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rpQ-Qw-MaV"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
